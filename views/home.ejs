@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title><%= title %></title>
+        <meta name="description" content="First Express App">
+    </head>
+    <body>
+        <center>
+            <table>
+                <thead>
+                    <tr>
+                        <th><div class="div1"></div></th>
+                    </tr>
+                </thead>
+            </table>
+        </center>
+        <table>
+            <tbody>
+                <% results.forEach(function(element){ %>
+                    <tr>
+                        <td></td>
+                        <td><h1> <%=element.name%> </h1></td>
+                    </tr>
+                    <tr>
+                        <td> <img src="<%=element.img%>" height="250" width="200"></td>
+                        <td> <div class="div2"><p><%=element.summary%></p></div></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </body>
+</html>
